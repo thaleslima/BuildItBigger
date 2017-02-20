@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "24.0.3"
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
@@ -21,8 +21,8 @@ android {
         }
 
         debug {
-            //buildConfigField("String", "ENDPOINT_URL", "\"http://10.0.2.2:8080/_ah/api/\"")
-            buildConfigField("String", "ENDPOINT_URL", "\"https://atebsistemas.appspot.com/_ah/api/\"")
+            buildConfigField("String", "ENDPOINT_URL", "\"http://10.0.2.2:8080/_ah/api/\"")
+            //buildConfigField("String", "ENDPOINT_URL", "\"https://atebsistemas.appspot.com/_ah/api/\"")
         }
     }
 
@@ -43,9 +43,9 @@ dependencies {
     })
     compile project(path: ':jokedetail')
     compile project(path: ':jokebackend', configuration: 'android-endpoints')
-    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:appcompat-v7:25.1.1'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
-    compile 'com.android.support:support-v4:25.1.0'
+    compile 'com.android.support:support-v4:25.1.1'
 
     freeCompile 'com.google.android.gms:play-services-ads:10.0.1'
 }
