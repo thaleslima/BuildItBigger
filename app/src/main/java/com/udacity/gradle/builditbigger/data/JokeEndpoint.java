@@ -38,6 +38,7 @@ public class JokeEndpoint extends AsyncTask<Void, Void, String> {
         try {
             return jokeApiService.getJoke().execute().getMessage();
         } catch (IOException e) {
+            e.printStackTrace();
             return null;
         }
     }

@@ -17,12 +17,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField("String", "ENDPOINT_URL", "\"https://atebsistemas.appspot.com/_ah/api/\"")
+            buildConfigField("String", "ENDPOINT_URL", "\"https://joke-api.appspot.com/_ah/api/\"")
         }
 
         debug {
             buildConfigField("String", "ENDPOINT_URL", "\"http://10.0.2.2:8080/_ah/api/\"")
-            //buildConfigField("String", "ENDPOINT_URL", "\"https://atebsistemas.appspot.com/_ah/api/\"")
+            //buildConfigField("String", "ENDPOINT_URL", "\"https://joke-api.appspot.com/_ah/api/\"")
         }
     }
 
